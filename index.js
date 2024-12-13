@@ -73,33 +73,3 @@ function calculatePayroll(arrayOfEmployeeRecords){
         return accumulator + allWagesFor(employeeRecordObject)
     }, 0)
 }
-
-const items = [
-    {
-        "name": "apple",
-        "price": 4.99
-    },
-    {
-        "name": "banana",
-        "price": 0.99
-    },
-    {
-        "name": "broomstick",
-        "price": 12.00
-    }
-]
-
-const totalPrice = items.reduce((accumulator, item) => {
-    return accumulator + item.price
-}, 0)
-
-const dateSet = new Set()
-dateSet.add("2024-11-20")
-dateSet.add("2024-11-21")
-dateSet.add("2024-11-20")
-console.log(dateSet)
-
-dateSet.forEach(date => {
-    console.log(date)
-})
-console.log(Array(dateSet))
